@@ -2,7 +2,7 @@ namespace :local_news_radar do
     
     desc 'Sets up parolkar\'s local_news_radar plugin '
     task :setup do
-      
+      root = "#{Rails.root}"
       raise 'local_news_radar plugin was only tested on unix & windows' if ! Rake.application.unix? &&  ! Rake.application.windows?
       
       #copy files
